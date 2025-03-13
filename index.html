@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Week 8</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" v-model="firstName" placeholder="Enter First Name">
+            <input type="text" v-model="lastName" placeholder="Enter Last Name">
+            <p>Full Name: {{ fullName }}</p>
+            <input type="number" v-model="quantity" min="0" placeholder="Enter Quantity">
+            <p>Price per item: ${{ pricePerItem }}</p>
+            <p>Total Price: ${{ totalPrice }}</p>
+            <button @click="clearFields">Clear Fields</button>
+        </div>
+        <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
